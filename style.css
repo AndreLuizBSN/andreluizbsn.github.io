@@ -10,6 +10,14 @@ a{
     text-decoration: none;
 }
 
+p {
+    line-height: 22px;
+}
+
+li {
+    margin: 2px 0;
+}
+
 header{
     height: 50px;
     background: url(img/4.jpg);
