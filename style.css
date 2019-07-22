@@ -55,7 +55,7 @@ header .flag-group .flag{
     background: #dadada;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 515px) {
 	.menu .menu-item {
         display: block;
     }
