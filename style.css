@@ -128,9 +128,13 @@ header .flag-group .flag{
 footer {
     position: fixed;
     bottom: 0;
-    padding: 15px 0;
+    padding: 5px 0;
     text-align: center;
     width: 100%;
     box-shadow: 0 2px 7px;
     background: #fff;
+}
+
+footer img{
+    width: 30px;
 }
