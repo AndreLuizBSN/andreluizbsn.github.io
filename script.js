@@ -1,59 +1,99 @@
-$(document).ready(function() {
-    
-    //load language
-    var lang = localStorage.getItem('lang') || 'pt-br'
+const baseList = ["home", "about", "contact"];
 
-    $('.content div').css('display', 'none')
+const renderData = (datas) => {
+  let form = [];
 
-    $('.content .home').css('display', 'block')
+  datas.forEach((data) => {
+    if (data.type === "paragraph") form.push("<p>" + data.content + "</p>");
+    if (data.type === "title4") form.push("<h4>" + data.content + "</h4>");
+    if (data.type === "title5") form.push("<h5>" + data.content + "</h5>");
+    if (data.type === "list") {
+      form.push("<ul>");
+      data.content.forEach((item) => form.push("<li>" + item + "</li>"));
+      form.push("</ul>");
+    }
+    if (data.type === "link") {
+      form.push(
+        "<a href='" +
+          data.content.href +
+          "' target='" +
+          data.content.target +
+          "' class='" +
+          data.content.class +
+          "'>",
+      );
+      form.push(
+        "<img src='" +
+          data.content.image +
+          "' style='" +
+          data.content.style +
+          "'/>",
+      );
+      form.push(data.content.label);
+      form.push("</a>");
+    }
+    if (data.type === "memo")
+      form.push("<img src='" + data.content.image + "' />" + data.content.text);
+  });
 
-    $('.content div > div').css('display', 'none')
-    $('.'+lang).css('display', 'block')
+  return form.join("");
+};
 
-    $('#flag-'+lang).css({
-        'box-shadow': '0 0px 4px #fff',
-        'border-radius': '3px'
-    })
+fetch("./data.json")
+  .then((response) => response.json())
+  .then((dt) => {
+    console.log(dt);
+    var lang = localStorage.getItem("lang") || "en-us";
+    var page = localStorage.getItem("page") || "home";
 
-    //menu - words
-    var menu = {
-        home: {
-            'pt-br': 'Home',
-            'en-us': 'Home'
-        },
-        about: {
-            'pt-br': 'Currículo',
-            'en-us': 'Resume'
-        },
-        contact: {
-            'pt-br': 'Contato',
-            'en-us': 'Contact'
-        }
+    const menu = dt.menu;
+    baseList.forEach((bs) => {
+      document.getElementById(bs + "-content").style.display = "none";
+    });
+    document.getElementById(page + "-content").style.display = "block";
+
+    const pageContent = document.getElementById(page + "-content");
+    pageContent.getElementsByClassName("content")[0].innerHTML = renderData(
+      dt[page][lang],
+    );
+
+    document.getElementById("home").innerText = menu.home["" + lang + ""];
+    document.getElementById("about").innerText = menu.about["" + lang + ""];
+    document.getElementById("contact").innerText = menu.contact["" + lang + ""];
+
+    //menu on click
+    const menuItems = document.getElementsByClassName("menu-item");
+
+    for (let i = 0; i < menuItems.length; i++) {
+      const element = menuItems[i];
+
+      const id = element.id;
+      element.onclick = function () {
+        baseList.forEach((bs) => {
+          document.getElementById(bs + "-content").style.display = "none";
+        });
+        document.getElementById(id + "-content").style.display = "block";
+        localStorage.setItem("page", id);
+        const pageContent = document.getElementById(id + "-content");
+        pageContent.getElementsByClassName("content")[0].innerHTML = renderData(
+          dt[id][lang],
+        );
+      };
     }
 
-    //menu - show
-    $('#home').text(menu.home[""+lang+""])
-    $('#about').text(menu.about[""+lang+""])
-    $('#contact').text(menu.contact[""+lang+""])
-    
-    
+    document.getElementById("flag-" + lang).style.boxShadow = "0 0px 4px #fff";
+    document.getElementById("flag-" + lang).style.borderRadius = "3px";
 
-    //change language
-    $('.flag').click(function(){
-        if ( $(this).attr('id') == 'flag-pt-br') {
-            localStorage.setItem('lang', 'pt-br');
-            location.reload();
-        } else if ( $(this).attr('id') == 'flag-en-us') {
-            localStorage.setItem('lang', 'en-us');
-            location.reload();
-        }
-    })
+    const flags = document.getElementsByClassName("flag");
 
-    //Menu control
-    $('.menu > .menu-item').click(function(){
-        $('.content > div').css('display', 'none')
-        $('.'+$(this).attr('id')).css('display', 'block')
-    })
+    for (let i = 0; i < flags.length; i++) {
+      const element = flags[i];
+      const idLang = element.id.replace("flag-", "");
 
-
-});
+      element.onclick = function () {
+        localStorage.setItem("lang", idLang);
+        location.reload();
+      };
+    }
+  })
+  .catch((err) => console.error(err));

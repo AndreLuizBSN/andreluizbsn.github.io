@@ -61,43 +61,43 @@ header .flag-group .flag{
     }
 }
 
-.content {
+.main {
     max-width: 996px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 
-.content div {
+.main div {
     margin: 10px;
 }
 
-.content .home .text{
+#home-content .content{
     width: 60%;
     text-align: justify;
     display: inline-block !important;
 }
-.content .home .img{
+#home-content .img{
     display: inline-block !important;
     float: left;
 }
 
 @media (max-width: 660px) {
-	.content .home .text {
+	#home-content .content {
         width: 95%;
     }
-    .content .home .img{
+    #home-content .img{
         display: block !important;
         text-align: center;
         float: none;
     }
 }
 
-.content .home .img img{
+#home-content .img img{
     width: 200px;
     border-radius: 50%;
 }
 
-.content .about .download-pdf{
+#about-content .download-pdf{
     display: block;
     text-align: center;
     color: #5f5d5d;
@@ -106,22 +106,22 @@ header .flag-group .flag{
     font-size: 30px;
 }
 
-.content .contact{
+#contact-content{
     font-size: 20px;
     text-align: center;
 }
 
-.content .contact div{
+#contact-content div{
     margin: 10px 0;
 }
 
-.content .contact img{
+#contact-content img{
     width: 18px;
 }
-.content .contact .phone-icon{
+#contact-content .phone-icon{
     width: 18px;
 }
-.content .contact .whatsapp-icon{
+#contact-content .whatsapp-icon{
     width: 18px;
 }
 

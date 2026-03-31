@@ -1,0 +1,310 @@
+{
+  "menu": {
+    "home": {
+      "pt-br": "Home",
+      "en-us": "Home"
+    },
+    "about": {
+      "pt-br": "Currículo",
+      "en-us": "Resume"
+    },
+    "contact": {
+      "pt-br": "Contato",
+      "en-us": "Contact"
+    }
+  },
+  "home": {
+    "en-us": [
+      {
+        "type": "paragraph",
+        "content": "André Luiz Alexandrini, 37 years old. I'm living in Bangkok, Thailand."
+      },
+      {
+        "type": "paragraph",
+        "content": "I'm a bachelor's in Information Systems(2012) and I'm working with this area since 2010."
+      },
+      {
+        "type": "paragraph",
+        "content": "Nowadays, I'm working as a full-stack senior developer in a international company in Portugal, and I develop websites, games and Apps just for fun."
+      },
+      {
+        "type": "paragraph",
+        "content": "I worked with support customer, manager of support customer and Web Designer."
+      },
+      {
+        "type": "paragraph",
+        "style": "bold",
+        "content": "JavaScript | TypeScript | Node.js | NestJS | Next.js | React | AngularJS | MongoDB | PostgreSQL | SQL Server | Docker"
+      }
+    ],
+    "pt-br": [
+      {
+        "type": "paragraph",
+        "content": "André Luiz Alexandrini, 37 anos. Moro atualmente em Bangkok, capital da Tailândia."
+      },
+      {
+        "type": "paragraph",
+        "content": "Sou formado em Sistemas de Informação(2012) e trabalho na área de sistemas desde 2010."
+      },
+      {
+        "type": "paragraph",
+        "content": "Trabalho atualmente como desenvolvedor full-stack senior em uma empresa internacional localizada em Portugal, e desenvolvo sites, games e Apps como hobbie."
+      },
+      {
+        "type": "paragraph",
+        "content": "Já trabalhei com atendimento ao cliente(suporte), gestor de equipe de suporte e Web Designer."
+      },
+      {
+        "type": "paragraph",
+        "style": "bold",
+        "content": "JavaScript | TypeScript | Node.js | NestJS | Next.js | React | AngularJS | MongoDB | PostgreSQL | SQL Server | Docker"
+      }
+    ]
+  },
+  "about": {
+    "pt-br": [
+      {
+        "type": "title4",
+        "content": "André Luiz Alexandrini"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bairro Fruteira - 1853 - Laurentino SC, Brasil<br />Phone: +55 47 98807-4972<br />E-Mail: andreluizbsn@gmail.com<br />Skype: andreluizbsn<br /><br /><hr />"
+      },
+      {
+        "type": "title5",
+        "content": "OBJETIVO"
+      },
+      {
+        "type": "paragraph",
+        "content": "Exercer trabalho em tempo integral como desenvolvedor Java, Node JS, Javascript e Mobile<br /><hr />"
+      },
+      {
+        "type": "title5",
+        "content": "QUALIFICAÇÕES E HABILIDADES"
+      },
+      {
+        "type": "list",
+        "content": [
+          "Excelente habilidade de comunicação",
+          "Excepcional desenvolvedor de relacionamento com clientes",
+          "Habilidades multitarefa, sob prazos e pressão",
+          "Excelentes habilidades de pensamento analítico e crítico",
+          "3 anos de experiência em suporte técnico",
+          "3 anos de experiência em desenvolvimento de sistemas - PHP, NodeJS, Ionic",
+          "Nivel intermediário em Microsoft SQL Server, PostgreSQL, MySQL, MongoDB",
+          "Nivel básico em desenvolvimento em Android Nativo e Densenvolvimento em Java",
+          "Fluente em Português",
+          "Intermediário em Inglês",
+          "Nível Intermediário em Microsoft Office - Word, Excel, PowerPoint e Access",
+          "Nível Intermediário em Ubuntu, Windows e MacOs",
+          "Apaixonado por criatividade, tecnologia e comunicação"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "FORMAÇÃO"
+      },
+      {
+        "type": "paragraph",
+        "content": "2008 – 2012 Bacharel em Sistemas de Informação – UNIDAVI, Rio do Sul - Brasil"
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "EXPERIÊNCIAS DE TRABALHO"
+      },
+      {
+        "type": "list",
+        "content": [
+          "2018- atualmente: Desenvolvedor Java – Edge Sistemas – Rio do Sul, Brasil<br /> Desenvolvedor de soluções usando Spring Framework e PostgreSQL",
+          "2015- 2017: Desenvolvedor – Vexta Systems – Rio do Sul, Brasil<br />Desenvolvedor de soluções usando Node JS e Ionic",
+          "2014- 2015: Analista de suporte técnico – Vexta Systems – Rio do Sul, Brasil<br />Coordenação da equipe de suporte ao sistema ERP<br />Desenvolvimento de soluções e reparos do sistema, e apoio aos usuários",
+          "2012- 2013: Desenvolvedor – PW Soluções WEB – Rio do Sul, Brasil<br />Desenvolvimentod e WebSites usando PHP e MySQL",
+          "2011- 2012: Suporte técnico – Vexta Systems – Rio do Sul, Brasil<br />Desenvolvimento de soluções e reparos do sistema, e apoio aos usuários"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "ATIVIDADES ADICIONAIS"
+      },
+      {
+        "type": "list",
+        "content": [
+          "IV Seminário de Contabilidade - Rio do Sul, Brasil - (UNIDAVI, 2008).",
+          "Curso de Suporte técnico - Rio do Sul, Brasil - (UNIDAVI, Duração de 36 horas, 2010).",
+          "Globalcode – The Developers Conference 2012 – Florianópolis, Brasil – PHP (Duração de 8 horas)",
+          "Globalcode – The Developers Conference 2012 – Florianópolis,Brasil – Marketing Digital (Duração de 8 horas)",
+          "Globalcode – The Developers Conference 2016 – Florianópolis,Brasil – Java (Duração de 8 horas)",
+          "Globalcode – The Developers Conference 2017 – Florianópolis,Brasil – BigData e NoSQL (Duração de 8 horas)",
+          "Globalcode – The Developers Conference 2017 – Florianópolis,Brasil – JavaWEB (Duração de 8 horas)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "INFORMAÇÕES ADICIONAIS"
+      },
+      {
+        "type": "list",
+        "content": [
+          "Disponível para viajar",
+          "Disponível para troca de cidade, país",
+          "Disponível para trabalho Home office"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "href": "img/EN - Curriculum_Andre_Luiz_Alexandrini.doc.pdf",
+          "target": "blank",
+          "class": "download-pdf",
+          "image": "img/pdf.png",
+          "style": "width: 18px",
+          "label": "Download Resume"
+        }
+      }
+    ],
+    "en-us": [
+      {
+        "type": "title4",
+        "content": "André Luiz Alexandrini"
+      },
+      {
+        "type": "paragraph",
+        "content": "1853 - Fruteira Street, Laurentino SC, Brazil<br />Phone: +55 47 98807-4972<br />E-Mail: andreluizbsn@gmail.com<br />Skype: andreluizbsn<br /><br /><hr />"
+      },
+      {
+        "type": "title5",
+        "content": "OBJECTIVE"
+      },
+      {
+        "type": "paragraph",
+        "content": "To obtain a full-time job like a Java, Node JS, Javascript, Mobile dev.<br /><hr />"
+      },
+      {
+        "type": "title5",
+        "content": "QUALIFICATIONS AND SKILLS"
+      },
+      {
+        "type": "list",
+        "content": [
+          "Excellent communication, coordination and organizational skills",
+          "Exceptional relationship building skills with customers",
+          "Superior multi-tasking skills, and work well under deadlines and pressure",
+          "Possess excellent analytical and critical thinking skills",
+          "3 years of experience in technical support",
+          "3 years of experience in system development - PHP, NodeJS, Ionic",
+          "Intermediate level in Microsoft SQL Server, PostgreSQL, MySQL, MongoDB",
+          "Basic level in Native Android Development and Java Development",
+          "Fluent in Portuguese",
+          "Intermediate in English",
+          "Intermediate level in Microsoft Office - Word, Excel, PowerPoint and Access",
+          "Intermediate level in Ubuntu, Windows and MacOs",
+          "Passionate about creativity, technology and communications"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "EDUCATION"
+      },
+      {
+        "type": "paragraph",
+        "content": "2008 – 2012 Bachelor in Information Systems – UNIDAVI, Rio do Sul - Brazil<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "WORK EXPERIENCE"
+      },
+      {
+        "type": "list",
+        "content": [
+          "2018- Present: Java Developer – Edge Sistemas – Rio do Sul, Brazil<br />Developer solution using Spring Framework and PostgreSQL",
+          "2015- 2017: Developer – Vexta Systems – Rio do Sul, Brazil<br />Developer solution using Node JS and Ionic",
+          "2014- 2015: Technical Support Analyst – Vexta Systems – Rio do Sul, Brazil<br /> Coordinate the Technical Support group<br />To promote the solution and repair on the system",
+          "2012- 2013: Developer – PW Soluções WEB – Rio do Sul, Brazil<br />Development of websites using PHP and MySQL",
+          "2011- 2012: Technical Support – Vexta Systems – Rio do Sul, Brazil<br />To promote the solution and repair on the system<br />To help the customers on the use of the system"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "ADDITIONAL ACTIVITIES"
+      },
+      {
+        "type": "list",
+        "content": [
+          "IV Seminary of Announcement - Rio do Sul, Brazil - (UNIDAVI, 2008).",
+          "Course of Support Technical - Rio do Sul, Brazil - (UNIDAVI,During 36 hours, 2010).",
+          "Globalcode – The Developers Conference 2012 – Florianópolis, Brazil – PHP (During 8 hours)",
+          "Globalcode – The Developers Conference 2012 – Florianópolis, Brazil – Marketing Digital (During 8 hours)",
+          "Globalcode – The Developers Conference 2016 – Florianópolis, Brazil – Java (During 8 hours)",
+          "Globalcode – The Developers Conference 2017 – Florianópolis, Brazil – BigData and NoSQL (During 8 hours)",
+          "Globalcode – The Developers Conference 2017 – Florianópolis, Brazil – JavaWEB (During 8 hours)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "<hr />"
+      },
+      {
+        "type": "title5",
+        "content": "ADDITIONAL INFORMATIONS"
+      },
+      {
+        "type": "list",
+        "content": [
+          "Disponible to travel",
+          "Disponible to change city, country",
+          "Disponible to work at home"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "href": "img/EN - Curriculum_Andre_Luiz_Alexandrini.doc.pdf",
+          "target": "blank",
+          "class": "download-pdf",
+          "image": "img/pdf.png",
+          "style": "width: 18px",
+          "label": "Download Resume"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "en-us": [
+      {
+        "type": "memo",
+        "content": { "image": "img/mail.png", "text": "andreluizbsn@gmail.com" }
+      }
+    ],
+    "pt-br": [
+      {
+        "type": "memo",
+        "content": { "image": "img/mail.png", "text": "andreluizbsn@gmail.com" }
+      }
+    ]
+  }
+}
