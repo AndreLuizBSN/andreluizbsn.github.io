@@ -43,7 +43,6 @@ fetch("./data.json")
   .then((response) => response.json())
   .then((dt) => {
     console.log(dt);
-    var lang = localStorage.getItem("lang") || "en-us";
     var page = localStorage.getItem("page") || "home";
 
     const menu = dt.menu;
@@ -54,12 +53,8 @@ fetch("./data.json")
 
     const pageContent = document.getElementById(page + "-content");
     pageContent.getElementsByClassName("content")[0].innerHTML = renderData(
-      dt[page][lang],
+      dt[page],
     );
-
-    document.getElementById("home").innerText = menu.home["" + lang + ""];
-    document.getElementById("about").innerText = menu.about["" + lang + ""];
-    document.getElementById("contact").innerText = menu.contact["" + lang + ""];
 
     //menu on click
     const menuItems = document.getElementsByClassName("menu-item");
@@ -76,23 +71,8 @@ fetch("./data.json")
         localStorage.setItem("page", id);
         const pageContent = document.getElementById(id + "-content");
         pageContent.getElementsByClassName("content")[0].innerHTML = renderData(
-          dt[id][lang],
+          dt[id],
         );
-      };
-    }
-
-    document.getElementById("flag-" + lang).style.boxShadow = "0 0px 4px #fff";
-    document.getElementById("flag-" + lang).style.borderRadius = "3px";
-
-    const flags = document.getElementsByClassName("flag");
-
-    for (let i = 0; i < flags.length; i++) {
-      const element = flags[i];
-      const idLang = element.id.replace("flag-", "");
-
-      element.onclick = function () {
-        localStorage.setItem("lang", idLang);
-        location.reload();
       };
     }
   })
